@@ -1,0 +1,55 @@
+{
+  "name": "hackathon-starter",
+  "version": "4.3.0",
+  "description": "A boilerplate for Node.js web applications",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sahat/hackathon-starter.git"
+  },
+  "author": "Sahat Yalkabov",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "npm rebuild node-sass",
+    "start": "node app.js",
+    "start-dev": "nodemon app.js",
+    "test": "mocha --reporter spec",
+    "lint": "eslint **/*.js frontend/src/*"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "chalk": "^2.1.0",
+    "cheerio": "^1.0.0-rc.2",
+    "clockwork": "^0.1.4",
+    "compression": "^1.7.0",
+    "connect-mongo": "^2.0.1",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "errorhandler": "^1.5.0",
+    "express": "^4.15.4",
+    "express-status-monitor": "^1.0.0",
+    "express-validator": "^5.0.3",
+    "lob": "^5.1.0",
+    "mongoose": "^5.0.9",
+    "morgan": "^1.8.2",
+    "node-sass": "^4.7.2",
+    "node-sass-middleware": "^0.11.0",
+    "request": "^2.81.0",
+    "validator": "^9.4.1"
+  },
+  "peerDependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-react": "^7.7.0",
+    "mocha": "^5.0.2",
+    "sinon": "^4.4.2",
+    "sinon-mongoose": "^2.0.2",
+    "supertest": "^3.0.0"
+  }
+}
